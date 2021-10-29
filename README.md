@@ -75,12 +75,11 @@ How the contents of this repository were used to generate the analysis.
     * `/bbn/bbn_structure.py`
   - Process categorical data with `labelencoder` from `scikit-learn`
   - Encode expert knowledge into graph structure via a list of tuples in the first invocation of `StructureModel()`
-    * `png` exported as `/bbn/init_graph.png` (as of 10-25-2021 this takes a long time to write the png and is commented out)
-  - Improve graph structure with `NO TEARS` using the `from_pandas` function from `causalnex` blacklisting spurrious node + edge connections with a second list of tuples
+    * `png` exported as `/bbn/init_graph.png` (as of 10-25-2021 this takes a long time to write the png and is commented out of the code, the pickle of this graph is available at `/bbn/expert_sm.pickle` for the CPD fitting in step #5 after unpicklign the structure model binary)
+  - *Optional:* learn graph structure with `NO TEARS` using the `from_pandas` function from `causalnex` blacklisting spurrious node + edge connections with a second list of tuples
   - Exports:
     * categorical label encodings for `genotype` (or cultivar) `/bbn/genotype_map.json` & `/bbn/season_map.json`
-    * pickle of structure model as `/bbn/nt_sm`
-    * `png` of directed acyclic graph as `/bbn/final_graph.png`
+    * **Currently stuck solving graph structure, so only expert knowledge encoded graph is available**
 
 **5. Discritized Data Mapping & Conditional Probability Distribution Fitting:**
   - Import Bayesian Network by structure model pickle
