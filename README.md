@@ -86,5 +86,5 @@ How the contents of this repository were used to generate the analysis.
   - Import Bayesian Network by structure model pickle
   - Instantiate Bayesian network with `BayesianNetwork()` function from `causalnex`
   - Map continuous variables into categories
-  - 
+  - A detailed checklist of these steps can be found= in this GitHub [issue](https://github.com/genophenoenvo/phenophasebbn/issues/2)
 
